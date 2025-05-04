@@ -23,8 +23,7 @@ router.post('/analyze', async (req, res) => {
       text: child.data.selftext || '',
       created: new Date(child.data.created_utc * 1000),
       author: child.data.author,
-      score: child.data.score,
-      num_comments: child.data.num_comments
+      score: child.data.score
     }
   ));
     
@@ -37,7 +36,6 @@ router.post('/analyze', async (req, res) => {
         ...post,
         sentiment: {
           score: result.score,
-          comparative: result.comparative,
           category: getSentimentCategory(result.score),
           positive: result.positive,
           negative: result.negative
@@ -89,6 +87,7 @@ function generateSummary(posts) {
   
   timelineData.sort((a, b) => a.date - b.date);
   console.log(timelineData);
+  
   return {
     totalPosts: posts.length,
     categoryCounts,
