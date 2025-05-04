@@ -3,8 +3,8 @@ A web application for sentiment analysis with separate frontend and backend comp
 Project Structure
 
 sentiment_analyser/
-├── backend/      # Node.js backend
-└── frontend/     # React frontend
+├── backend/      # Node.js 
+└── frontend/     # React 
 
 Installation & Setup : 
 Prerequisites
