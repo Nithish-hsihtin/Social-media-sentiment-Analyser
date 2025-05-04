@@ -24,9 +24,9 @@ Open a new terminal window:
 cd sentiment_analyser/frontend
 npm i
 npm start
-     zascc           vb b                                                            '_
+
 The frontend application will automatically open in your default browser.
 
-Technologies :zz
+Technologies :
 Backend: Node.js
-Frontend: React
+Frontend: React js
